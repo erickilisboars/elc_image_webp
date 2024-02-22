@@ -197,7 +197,7 @@ function elc_image_webp_create_thumb_insert()
 {
   $original_image_path = IMPATH . (int)gps('id') . 't';
 
-  $extensions = ['.png', '.jpeg', '.jpg', '.webp', '.gif'];
+  $extensions = ['.png', '.jpeg', '.jpg', '.webp'];
 
   $found_image_path = '';
   $found_extension = '';
