@@ -145,7 +145,7 @@ function elc_image_webp_delete_image($evt, $stp, $id)
 {
   $image = safe_row('*', 'txp_image', "id = '$id'", false);
 
-  if($image['ext'] == '.webp') {
+  if($image['ext'] == '.webp' || $image['ext'] == '.gif') {
     return;
   }
 
@@ -161,7 +161,7 @@ function elc_image_webp_delete_thumb($evt, $stp, $id)
 {
   $image = safe_row('*', 'txp_image', "id = '$id'", false);
 
-  if($image['ext'] == '.webp') {
+  if($image['ext'] == '.webp' || $image['ext'] == '.gif') {
     return;
   }
 
